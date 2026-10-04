@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мой текст</title>
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --ink: #1c2430;
+    --card: #ffffff;
+    --line: #d9e0e8;
+    --accent: #2563eb;
+    --accent-ink: #ffffff;
+    --ok: #15803d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161c;
+      --ink: #e8edf3;
+      --card: #1a2029;
+      --line: #2b3440;
+      --accent: #5b8cff;
+      --accent-ink: #0b1220;
+      --ok: #4ade80;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+  .box {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #text {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 1.05rem;
+  }
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px 20px;
+    font: inherit;
+    font-weight: 600;
+    color: var(--accent-ink);
+    background: var(--accent);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  button.done { background: var(--ok); }
+</style>
+</head>
+<body>
+<main>
+  <div class="box">
+    <div id="text">[{"Valid":true,"Type":"PlaceUnit","Time":7,"Position":"114.89412689208984, -31.568737030029297, -60.609622955322266","ID":34,"CF":"114.894127, -31.568737, -60.609623, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_trithorn"},{"ID":34,"Type":"ToggleAutoUpgrade","Time":10},{"Valid":true,"Type":"PlaceUnit","Time":31,"Position":"121.75236511230469, -31.568737030029297, -76.05877685546875","ID":76,"CF":"121.752365, -31.568737, -76.0587769, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_well"},{"ID":76,"Type":"ToggleAutoUpgrade","Time":32},{"Valid":true,"Type":"PlaceUnit","Time":86,"Position":"106.45948791503906, -31.56873321533203, -81.57843017578125","ID":222,"CF":"106.459488, -31.5687332, -81.5784302, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_castle"},{"ID":222,"Type":"ToggleAutoUpgrade","Time":90},{"Valid":true,"Type":"PlaceUnit","Time":139,"Position":"134.44412231445312, -31.568737030029297, -4.473529815673828","ID":338,"CF":"134.444122, -31.568737, -4.47352982, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_sniper"},{"ID":338,"Type":"ToggleAutoUpgrade","Time":140},{"Valid":true,"Type":"PlaceUnit","Time":166,"Position":"127.0887451171875, -31.56873321533203, -46.3834342956543","ID":371,"CF":"127.088745, -31.5687332, -46.3834343, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_parasite_plant"},{"ID":371,"Type":"ToggleAutoUpgrade","Time":167},{"Valid":true,"Type":"PlaceUnit","Time":182,"Position":"130.24412536621094, -31.56873321533203, -54.98809051513672","ID":388,"CF":"130.244125, -31.5687332, -54.9880905, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":388,"Type":"ToggleAutoUpgrade","Time":183},{"Valid":true,"Type":"PlaceUnit","Time":186,"Position":"135.27842712402344, -31.568737030029297, -54.72919845581055","ID":393,"CF":"135.278427, -31.568737, -54.7291985, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":393,"Type":"ToggleAutoUpgrade","Time":187},{"Valid":true,"Type":"PlaceUnit","Time":239,"Position":"123.60135650634766, -31.568737030029297, -60.09468078613281","ID":468,"CF":"123.601357, -31.568737, -60.0946808, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_timekeeper"},{"ID":34,"Type":"SellUnit","Time":321},{"Valid":true,"Type":"PlaceUnit","Time":323,"Position":"151.97564697265625, -31.568737030029297, -37.287357330322266","ID":746,"CF":"151.975647, -31.568737, -37.2873573, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_trithorn"},{"ID":746,"Type":"ToggleAutoUpgrade","Time":324},{"ID":393,"Type":"SellUnit","Time":331},{"ID":388,"Type":"SellUnit","Time":332},{"Valid":true,"Type":"PlaceUnit","Time":333,"Position":"158.3747100830078, -31.568737030029297, -12.703659057617188","ID":747,"CF":"158.37471, -31.568737, -12.7036591, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":747,"Type":"ToggleAutoUpgrade","Time":335},{"Valid":true,"Type":"PlaceUnit","Time":337,"Position":"156.88218688964844, -31.568737030029297, -2.488758087158203","ID":748,"CF":"156.882187, -31.568737, -2.48875809, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":748,"Type":"ToggleAutoUpgrade","Time":338},{"ID":371,"Type":"SellUnit","Time":356},{"Valid":true,"Type":"PlaceUnit","Time":358,"Position":"151.16448974609375, -31.568737030029297, -2.291597366333008","ID":749,"CF":"151.16449, -31.568737, -2.29159737, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_parasite_plant"},{"ID":749,"Type":"ToggleAutoUpgrade","Time":359},{"ID":746,"Type":"SellUnit","Time":383},{"Valid":true,"Type":"PlaceUnit","Time":386,"Position":"137.71669006347656, -31.568737030029297, 23.704856872558594","ID":750,"CF":"137.71669, -31.568737, 23.7048569, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_trithorn"},{"ID":750,"Type":"ToggleAutoUpgrade","Time":386},{"ID":747,"Type":"SellUnit","Time":390},{"Valid":true,"Type":"PlaceUnit","Time":392,"Position":"132.57672119140625, -31.568737030029297, 27.390060424804688","ID":751,"CF":"132.576721, -31.568737, 27.3900604, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":751,"Type":"ToggleAutoUpgrade","Time":392},{"ID":748,"Type":"SellUnit","Time":397},{"Valid":true,"Type":"PlaceUnit","Time":399,"Position":"126.99895477294922, -31.568737030029297, 30.865379333496094","ID":752,"CF":"126.998955, -31.568737, 30.8653793, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":752,"Type":"ToggleAutoUpgrade","Time":400},{"ID":749,"Type":"SellUnit","Time":408},{"Valid":true,"Type":"PlaceUnit","Time":410,"Position":"112.12085723876953, -31.56873893737793, 34.92759704589844","ID":753,"CF":"112.120857, -31.5687389, 34.927597, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_parasite_plant"},{"ID":753,"Type":"ToggleAutoUpgrade","Time":410},{"ID":750,"Type":"SellUnit","Time":431},{"Valid":true,"Type":"PlaceUnit","Time":433,"Position":"81.16850280761719, -31.56873893737793, 34.19142150878906","ID":754,"CF":"81.1685028, -31.5687389, 34.1914215, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_trithorn"},{"ID":754,"Type":"ToggleAutoUpgrade","Time":434},{"ID":751,"Type":"SellUnit","Time":436},{"Valid":true,"Type":"PlaceUnit","Time":438,"Position":"70.70637512207031, -31.568735122680664, 31.843524932861328","ID":755,"CF":"70.7063751, -31.5687351, 31.8435249, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":755,"Type":"ToggleAutoUpgrade","Time":439},{"ID":752,"Type":"SellUnit","Time":441},{"Valid":true,"Type":"PlaceUnit","Time":442,"Position":"59.52659225463867, -31.568737030029297, 25.51395034790039","ID":756,"CF":"59.5265923, -31.568737, 25.5139503, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":756,"Type":"ToggleAutoUpgrade","Time":443},{"ID":753,"Type":"SellUnit","Time":452},{"Valid":true,"Type":"PlaceUnit","Time":454,"Position":"41.356597900390625, -31.568737030029297, 23.076805114746094","ID":757,"CF":"41.3565979, -31.568737, 23.0768051, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_parasite_plant"},{"ID":757,"Type":"ToggleAutoUpgrade","Time":455},{"ID":754,"Type":"SellUnit","Time":473},{"Valid":true,"Type":"PlaceUnit","Time":475,"Position":"31.597442626953125, -31.568737030029297, 35.94551467895508","ID":758,"CF":"31.5974426, -31.568737, 35.9455147, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_trithorn"},{"ID":758,"Type":"ToggleAutoUpgrade","Time":476},{"ID":755,"Type":"SellUnit","Time":479},{"Valid":true,"Type":"PlaceUnit","Time":480,"Position":"28.69304656982422, -31.568737030029297, 24.540464401245117","ID":759,"CF":"28.6930466, -31.568737, 24.5404644, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":759,"Type":"ToggleAutoUpgrade","Time":480},{"ID":756,"Type":"SellUnit","Time":482},{"Valid":true,"Type":"PlaceUnit","Time":483,"Position":"25.903972625732422, -31.568737030029297, 39.01744079589844","ID":760,"CF":"25.9039726, -31.568737, 39.0174408, -1, 0, -8.74227766e-08, 0, 1, 0, 8.74227766e-08, 0, -1","Rotation":180,"Unit":"unit_shockfrost"},{"ID":760,"Type":"ToggleAutoUpgrade","Time":484}]</div>
+  </div>
+  <button id="copy" type="button">Скопировать</button>
+</main>
+
+<script>
+  var btn = document.getElementById('copy');
+  var text = document.getElementById('text');
+
+  function fallbackCopy(value) {
+    var ta = document.createElement('textarea');
+    ta.value = value;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  btn.addEventListener('click', function () {
+    var value = text.innerText;
+    var done = function () {
+      btn.textContent = 'Скопировано';
+      btn.classList.add('done');
+      setTimeout(function () {
+        btn.textContent = 'Скопировать';
+        btn.classList.remove('done');
+      }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(value).then(done, function () {
+        fallbackCopy(value);
+        done();
+      });
+    } else {
+      fallbackCopy(value);
+      done();
+    }
+  });
+</script>
+</body>
+</html>
